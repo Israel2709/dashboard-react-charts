@@ -93,7 +93,7 @@ class App extends Component {
                     value={country}
                     onChange={this.changeCountryHandler}
                   ></Input>
-                  <ListGroup className={`floating-list shadow ${this.state.listIsHidden ? 'd-none' : ''}`}>
+                  <ListGroup className={`floating-list shadow border ${this.state.listIsHidden ? 'd-none' : ''}`}>
                     {
                       filteredCountries.map( ( country, index ) => (
                         <ListGroupItem
